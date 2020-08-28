@@ -1,4 +1,3 @@
-const server =  require('../bin/www')
 const io =  require('socket.io')(server)
 let randomColor = require('randomcolor')
 const uuid = require('uuid')

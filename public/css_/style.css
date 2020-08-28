@@ -5,6 +5,7 @@ html {
 body {
   margin: 0px;
   height: 100%;
+  width: 70%;
   font-family: 'Comfortaa', sans-serif;
   color: black;
 }
@@ -29,7 +30,7 @@ h1,h2{
 
 .custom-input{
   display: inline-block;
-  width: 88%;
+  width: 68%;
   height: 70%;
   font-family: 'Comfortaa', sans-serif;
   top: 25px;
@@ -42,12 +43,12 @@ h1,h2{
   padding: 0;
   margin: 0;
   color: black;
-  text-decoration-color: white;
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 .custom-input:focus{
-  color: white;
-  border-bottom:1px solid white;
+  color: rgb(2, 2, 2);
+  border-bottom:1px solid rgb(255, 255, 255);
 }
 
 button#send_message {
@@ -155,22 +156,14 @@ button#send_message {
 }
 
 .btn {
-  position: relative;
-
-  display: block;
   margin: 20px 5px;
   padding: 0;
-
   overflow: hidden;
-
-  border-width: 0;
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-
   background-color: transparent;
-  color: #ecf0f1;
-
+  color: #000000;
   transition: background-color .3s;
 }
 
@@ -232,13 +225,13 @@ button#send_message {
 
 @media screen and (min-width: 375px) and (max-width: 568px)  {
   .custom-input{
-      width: 80%;
+      width: 70%;
   }
 }
 
 @media screen and (min-width: 568px) and (max-width: 768px)  {
   .custom-input{
-      width: 75%;
+      width: 65%;
   }
 
   button#send_message {

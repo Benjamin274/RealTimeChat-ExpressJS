@@ -4,20 +4,13 @@
     <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
     <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css_/style.css" >
+    <!--Socket.io scirpt-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
     <title>Simple Chat App</title>
 </head>
 
 <body>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <h1 class="modal-title">What's your nickname?</h1>
-            <input id="nickname-input" class="custom-input" type="text" />
-        </div>
-
-    </div>
-
+  
     <!--Big wrapper-->
     <div class="big-wrapper">
         <!-- Left Column-->
@@ -50,7 +43,8 @@
 
             <!-- Input zone -->
             <div id="input_zone">
-                <input id="message" class="vertical-align custom-input" type="text" />
+                <input id="message" class="vertical-align custom-input" 
+                type="text" placeholder="Write Message..."/>
                 <button id="send_message" class="vertical-align btn" type="button">Send</button>
             </div>
 
@@ -60,7 +54,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Scripts-->
     <script src="./js/chat.js"></script>
-    <script src="./js/modalScript.js"></script>
     
 </body>
 </html>
